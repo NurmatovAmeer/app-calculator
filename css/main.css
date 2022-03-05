@@ -1,0 +1,53 @@
+
+.hwcard{
+    width: 400px;
+}
+
+.hwbody .col-3 button{
+    border-radius: 5px;
+    margin-left: -10px;
+    margin-top: 4px;
+    background-color: lightblue;
+    border: solid 1px lightblue;
+    width:90px ;
+    height: 60px;
+    text-decoration: none;
+    box-shadow: transparent;
+}
+.hwbody .col-3 button:hover{
+    border-radius: 5px;
+    margin-left: -10px;
+    margin-top: 2px;
+    background-color: lightcyan;
+    border: solid 1px lightblue;
+    width:90px ;
+    height: 60px;
+    text-decoration: none;
+    box-shadow: transparent;
+}
+.hwbody .col-3 button:focus{
+    margin-left: -10px;
+    margin-top: 2px;
+    background-color: lightcyan;
+    border-radius: 0px;
+    border: solid 1px lightblue;
+    width:90px ;
+    height: 60px;
+    text-decoration: none;
+    box-shadow: transparent;
+}
+.hwbody .col-3 .action{
+    background-color: lightgray;
+}
+.allclear{
+    margin: 10px 10px 3px -10px;
+    width: 380px;
+    border: solid 1px orange;
+    background-color:orange;
+    border-radius: 5px;
+}
+.allclear:hover{
+    margin: 10px 10px 3px -10px;
+    width: 380px;
+    border: solid 1px orange;
+}

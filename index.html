@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 32. Javascript</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-4 offset-4 mt-3">
+            <div class="card">
+                <div class="card-header">
+
+                    <input type="text" class="form-control text-right" disabled value="0" id="screen">
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12"><button type="button" class="btn btn-danger btn-block" onclick="clearScreen()">C</button></div>
+                        <div class="col-3"><button type="button" class="btn btn-success btn-block" onclick="addNumber(1)">1</button></div>
+                        <div class="col-3"><button type="button" class="btn btn-success btn-block" onclick="addNumber(2)">2</button></div>
+                        <div class="col-3"><button type="button" class="btn btn-success btn-block" onclick="addNumber(3)">3</button></div>
+                        <div class="col-3"><button type="button" class="btn btn-primary btn-block" onclick="action('add')">+</button></div>
+                        <div class="col-3"><button type="button" class="btn btn-success btn-block" onclick="addNumber(4)">4</button></div>
+                        <div class="col-3"><button type="button" class="btn btn-success btn-block" onclick="addNumber(5)">5</button></div>
+                        <div class="col-3"><button type="button" class="btn btn-success btn-block" onclick="addNumber(6)">6</button></div>
+                        <div class="col-3"><button type="button" class="btn btn-primary btn-block" onclick="action('minus')">-</button></div>
+                        <div class="col-3"><button type="button" class="btn btn-success btn-block" onclick="addNumber(7)">7</button></div>
+                        <div class="col-3"><button type="button" class="btn btn-success btn-block" onclick="addNumber(8)">8</button></div>
+                        <div class="col-3"><button type="button" class="btn btn-success btn-block" onclick="addNumber(9)">9</button></div>
+                        <div class="col-3"><button type="button" class="btn btn-primary btn-block" onclick="action('multiply')">*</button></div>
+                        <div class="col-3"><button type="button" class="btn btn-success btn-block" onclick="addNumber(0)">0</button></div>
+                        <div class="col-3"><button type="button" class="btn btn-success btn-block" onclick="addNumber('.')">.</button></div>
+                        <div class="col-3"><button type="button" class="btn btn-primary btn-block" onclick="equal()">=</button></div>
+                        <div class="col-3"><button type="button" class="btn btn-primary btn-block" onclick="action('divide')">/</button></div>
+                        <div class="col-3"><button type="button" class="btn btn-primary btn-block" onclick="action('delete')"><-</button></div>
+                        <div class="col-3"><button type="button" class="btn btn-primary btn-block" onclick="action('sqrt')">&#8730;</button></div>
+                        <div class="col-3"><button type="button" class="btn btn-primary btn-block" onclick="action('pow')">X <sup>2</sup></button></div>
+                        <div class="col-3"><button type="button" class="btn btn-primary btn-block" onclick="action('plus-minus')">&#177;</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--HOMEWORK-->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4 offset-4 mt-5">
+            <div class="card hwcard" style="background-color:black;">
+                <div class="card-header" style="background-color:black ">
+                    <input type="text" class="form-control text-right" style="background-color:black;color: white" disabled id="hw-screen" value="0">
+                </div>
+                <div class="card-body hwbody ">
+                   <div class="row">
+                       <div class="col-12"><button type="button" class="text-center allclear" onclick="clearedScreen()">AC</button></div>
+                       <div class="col-3"><button type="button"  onclick="inNumber(1)">1</button></div>
+                       <div class="col-3"><button type="button"  onclick="inNumber(2)">2</button></div>
+                       <div class="col-3"><button type="button"  onclick="inNumber(3)">3</button></div>
+                       <div class="col-3"><button type="button" class="action"  onclick="hwaction('add')">+</button></div>
+                       <div class="col-3"><button type="button"  onclick="inNumber(4)">4</button></div>
+                       <div class="col-3"><button type="button"  onclick="inNumber(5)">5</button></div>
+                       <div class="col-3"><button type="button"  onclick="inNumber(6)">6</button></div>
+                       <div class="col-3"><button type="button" class="action"  onclick="hwaction('minus')">-</button></div>
+                       <div class="col-3"><button type="button"  onclick="inNumber(7)">7</button></div>
+                       <div class="col-3"><button type="button"  onclick="inNumber(8)">8</button></div>
+                       <div class="col-3"><button type="button"  onclick="inNumber(9)">9</button></div>
+                       <div class="col-3"><button type="button" class="action"  onclick="hwaction('multiply')">*</button></div>
+                       <div class="col-3"><button type="button"  onclick="inNumber(0)">0</button></div>
+                       <div class="col-3"><button type="button"  onclick="inNumber('.')">.</button></div>
+                       <div class="col-3"><button type="button" class="action"  onclick="hwaction('divide')">/</button></div>
+                       <div class="col-3"><button type="button" class="action"  onclick="hwaction('backspace')"><-</button></div>
+                       <div class="col-3"><button type="button" class="action"  onclick="hwaction('root')">&#8730</button></div>
+                       <div class="col-3"><button type="button" class="action"  onclick="hwaction('pow')">X <sup>2</sup></button></div>
+                       <div class="col-3"><button type="button" class="action"  onclick="hwaction('plus-minus')">&#177</button></div>
+                       <div class="col-3"><button type="button" style="background-color:orange;border-color: orange"  onclick="hwequal()">=</button></div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
